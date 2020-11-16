@@ -7391,8 +7391,8 @@ function getDownloadInfo(refs, version, javaPackage, baseUrl) {
         console.log("entryVersion="+entryVersion);
         console.log("entryUrl="+entryUrl);
         console.log("curVersion1="+curVersion);
-        //if (semver.gt(entryVersion, curVersion)) {
-        var cmp = __nested_webpack_require_2519__(794);
+        if (semver.gt(entryVersion, curVersion)) {
+        //var cmp = __nested_webpack_require_2519__(794);
         //var cmp = __nested_webpack_require_2519__(794);
         if (cmp(entryVersion, curVersion)) {
             console.log("if block");
